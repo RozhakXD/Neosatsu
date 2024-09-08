@@ -10,7 +10,7 @@
 - **Support Multiple URLs**: Menampilkan beberapa URL hasil decode jika tersedia.
 
 ## Keterangan
-Saat ini, program hanya mendukung bypass link `Google Drive`. Layanan seperti:
+Saat ini, program kami hanya mendukung bypass link `Google Drive`. Layanan seperti:
 
 - **AceFile**
 - **Mediafire**
@@ -21,18 +21,18 @@ Saat ini, program hanya mendukung bypass link `Google Drive`. Layanan seperti:
 
 ## Instalasi
 1. Clone repository ini:
-```bash
-git clone https://github.com/RozhakXD/Neosatsu.git
-cd Neosatsu
-```
+  ```bash
+  git clone https://github.com/RozhakXD/Neosatsu.git
+  cd Neosatsu
+  ```
 2. Compile kode sumber menggunakan g++ (atau compiler C++ favorit Anda):
-```
-g++ -o Run Run.cpp
-```
+  ```bash
+  g++ -o Run Run.cpp
+  ```
 3. Jalankan program:
-```bash
-./Run
-```
+  ```bash
+  ./Run
+  ```
 
 ## Contoh I/O
 **Masukan:**
