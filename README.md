@@ -4,10 +4,10 @@
 **Neosatsu** adalah sebuah tool berbasis C++ yang digunakan untuk melakukan bypass pada shortlink Neosatsu. Dengan menggunakan algoritma decoding base64, Neosatsu akan mengekstrak dan membersihkan URL yang dienkripsi, lalu menghasilkan URL Google Drive yang valid.
 
 ## Fitur
-- **Bypass Shortlink Google Drive**: Mengubah shortlink Neosatsu menjadi URL Google Drive yang dapat diakses dengan mudah.
-- **Decoding Base64 Otomatis**: Menggunakan algoritma base64 untuk mendekode string terenkripsi secara otomatis.
 - **Pembersihan String**: Menghilangkan karakter yang tidak valid dari hasil decoding untuk memastikan URL yang dihasilkan benar.
+- **Bypass Shortlink Google Drive**: Mengubah shortlink Neosatsu menjadi URL Google Drive yang dapat diakses dengan mudah.
 - **Tampilan Hasil yang Optimal**: Menampilkan URL hasil decode dengan berbagai pilihan jika ada beberapa kemungkinan URL yang bisa dihasilkan.
+- **Decoding Base64 Otomatis**: Menggunakan algoritma base64 untuk mendekode string terenkripsi secara otomatis.
 
 ## Keterangan
 Saat ini, program kami hanya mendukung bypass link `Google Drive`. Layanan seperti:
@@ -45,9 +45,9 @@ https://linkuzu.blogspot.com/?url=wzHczowzHvL2RyaXZlLmdvb2dsZS5jb20vdWM/aWQ9MVBE
 ```
 
 ## Struktur Kode
+- **main**: Fungsi utama yang mengelola alur program, termasuk menerima input URL shortlink, melakukan proses decoding, membersihkan string, dan menampilkan hasil URL Google Drive yang valid kepada pengguna.
 - **base64_decode**: Fungsi ini bertanggung jawab untuk mendekode string terenkripsi yang dikodekan menggunakan base64.
 - **clean_string**: Fungsi ini membersihkan string hasil decode dengan menghapus karakter yang tidak valid, sehingga URL yang dihasilkan valid dan aman.
-- **main**: Fungsi utama yang mengelola alur program, termasuk menerima input URL shortlink, melakukan proses decoding, membersihkan string, dan menampilkan hasil URL Google Drive yang valid kepada pengguna.
 
 ## Masalah Umum
 - **Format URL Tidak Valid**: Jika URL yang dimasukkan tidak mengikuti format yang diharapkan, program mungkin gagal untuk melakukan decoding dengan benar.
