@@ -4,10 +4,10 @@
 **Neosatsu** adalah sebuah tool berbasis C++ yang digunakan untuk melakukan bypass pada shortlink Neosatsu. Dengan menggunakan algoritma decoding base64, Neosatsu akan mengekstrak dan membersihkan URL yang dienkripsi, lalu menghasilkan URL Google Drive yang valid.
 
 ## Fitur
-- **Bypass Shortlink**: Mengubah shortlink Neosatsu menjadi URL Google Drive yang dapat diakses.
-- **Algoritma Base64 Decoding**: Memanfaatkan decoding base64 untuk mengekstrak string terenkripsi.
-- **Pembersihan String Otomatis**: Menghapus karakter tidak valid dari string untuk menghasilkan URL yang valid.
-- **Support Multiple URLs**: Menampilkan beberapa URL hasil decode jika tersedia.
+- **Bypass Shortlink Google Drive**: Mengubah shortlink Neosatsu menjadi URL Google Drive yang dapat diakses dengan mudah.
+- **Decoding Base64 Otomatis**: Menggunakan algoritma base64 untuk mendekode string terenkripsi secara otomatis.
+- **Pembersihan String**: Menghilangkan karakter yang tidak valid dari hasil decoding untuk memastikan URL yang dihasilkan benar.
+- **Tampilan Hasil yang Optimal**: Menampilkan URL hasil decode dengan berbagai pilihan jika ada beberapa kemungkinan URL yang bisa dihasilkan.
 
 ## Keterangan
 Saat ini, program kami hanya mendukung bypass link `Google Drive`. Layanan seperti:
@@ -21,18 +21,18 @@ Saat ini, program kami hanya mendukung bypass link `Google Drive`. Layanan seper
 
 ## Instalasi
 1. Clone repository ini:
-  ```bash
-  git clone https://github.com/RozhakXD/Neosatsu.git
-  cd Neosatsu
-  ```
+    ```bash
+    git clone https://github.com/RozhakXD/Neosatsu.git
+    cd Neosatsu
+    ```
 2. Compile kode sumber menggunakan g++ (atau compiler C++ favorit Anda):
-  ```bash
-  g++ -o Run Run.cpp
-  ```
+    ```bash
+    g++ -o Run Run.cpp
+    ```
 3. Jalankan program:
-  ```bash
-  ./Run
-  ```
+    ```bash
+    ./Run
+    ```
 
 ## Contoh I/O
 **Masukan:**
@@ -45,9 +45,9 @@ https://linkuzu.blogspot.com/?url=wzHczowzHvL2RyaXZlLmdvb2dsZS5jb20vdWM/aWQ9MVBE
 ```
 
 ## Struktur Kode
-- **base64_decode**: Fungsi ini mendekode string yang dienkripsi menggunakan base64.
-- **clean_string**: Fungsi ini menghapus karakter yang tidak valid dari string yang didekode.
-- **main**: Program utama yang menerima input URL shortlink, melakukan decoding, membersihkan string, dan menampilkan URL Google Drive.
+- **base64_decode**: Fungsi ini bertanggung jawab untuk mendekode string terenkripsi yang dikodekan menggunakan base64.
+- **clean_string**: Fungsi ini membersihkan string hasil decode dengan menghapus karakter yang tidak valid, sehingga URL yang dihasilkan valid dan aman.
+- **main**: Fungsi utama yang mengelola alur program, termasuk menerima input URL shortlink, melakukan proses decoding, membersihkan string, dan menampilkan hasil URL Google Drive yang valid kepada pengguna.
 
 ## Masalah Umum
 - **Format URL Tidak Valid**: Jika URL yang dimasukkan tidak mengikuti format yang diharapkan, program mungkin gagal untuk melakukan decoding dengan benar.
